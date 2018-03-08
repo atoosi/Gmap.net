@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsContacts" targetNamespace="http://tempuri.org/dsContacts.xsd" xmlns:mstns="http://tempuri.org/dsContacts.xsd" xmlns="http://tempuri.org/dsContacts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuestConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuestConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Net_Gmap.Properties.Settings.GlobalReference.Default.QuestConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ax_crmContactsapTableAdapter" GeneratorDataComponentClassName="ax_crmContactsapTableAdapter" Name="ax_crmContactsap" UserDataComponentName="ax_crmContactsapTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuestConnectionString (Settings)" DbObjectName="Quest.dbo.ax_crmContactsap" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AccountNumber, FullName, CntctCode, CardType, AccountId, ContactId, EmailAddress1, Telephone1, Fax, Telephone2, JobTitle, Department, New_MarketSegment FROM dbo.ax_crmContactsap</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccountNumber" DataSetColumn="AccountNumber" />
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="CntctCode" DataSetColumn="CntctCode" />
+              <Mapping SourceColumn="CardType" DataSetColumn="CardType" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="ContactId" DataSetColumn="ContactId" />
+              <Mapping SourceColumn="EmailAddress1" DataSetColumn="EmailAddress1" />
+              <Mapping SourceColumn="Telephone1" DataSetColumn="Telephone1" />
+              <Mapping SourceColumn="Fax" DataSetColumn="Fax" />
+              <Mapping SourceColumn="Telephone2" DataSetColumn="Telephone2" />
+              <Mapping SourceColumn="JobTitle" DataSetColumn="JobTitle" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="New_MarketSegment" DataSetColumn="New_MarketSegment" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsContacts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsContacts" msprop:Generator_UserDSName="dsContacts">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ax_crmContactsap" msprop:Generator_TableClassName="ax_crmContactsapDataTable" msprop:Generator_TableVarName="tableax_crmContactsap" msprop:Generator_RowChangedName="ax_crmContactsapRowChanged" msprop:Generator_TablePropName="ax_crmContactsap" msprop:Generator_RowDeletingName="ax_crmContactsapRowDeleting" msprop:Generator_RowChangingName="ax_crmContactsapRowChanging" msprop:Generator_RowEvHandlerName="ax_crmContactsapRowChangeEventHandler" msprop:Generator_RowDeletedName="ax_crmContactsapRowDeleted" msprop:Generator_RowClassName="ax_crmContactsapRow" msprop:Generator_UserTableName="ax_crmContactsap" msprop:Generator_RowEvArgName="ax_crmContactsapRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountNumber" msprop:Generator_ColumnVarNameInTable="columnAccountNumber" msprop:Generator_ColumnPropNameInRow="AccountNumber" msprop:Generator_ColumnPropNameInTable="AccountNumberColumn" msprop:Generator_UserColumnName="AccountNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CntctCode" msprop:Generator_ColumnVarNameInTable="columnCntctCode" msprop:Generator_ColumnPropNameInRow="CntctCode" msprop:Generator_ColumnPropNameInTable="CntctCodeColumn" msprop:Generator_UserColumnName="CntctCode" type="xs:int" minOccurs="0" />
+              <xs:element name="CardType" msprop:Generator_ColumnVarNameInTable="columnCardType" msprop:Generator_ColumnPropNameInRow="CardType" msprop:Generator_ColumnPropNameInTable="CardTypeColumn" msprop:Generator_UserColumnName="CardType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" msprop:Generator_UserColumnName="AccountId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="38" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactId" msprop:Generator_ColumnVarNameInTable="columnContactId" msprop:Generator_ColumnPropNameInRow="ContactId" msprop:Generator_ColumnPropNameInTable="ContactIdColumn" msprop:Generator_UserColumnName="ContactId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="38" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmailAddress1" msprop:Generator_ColumnVarNameInTable="columnEmailAddress1" msprop:Generator_ColumnPropNameInRow="EmailAddress1" msprop:Generator_ColumnPropNameInTable="EmailAddress1Column" msprop:Generator_UserColumnName="EmailAddress1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telephone1" msprop:Generator_ColumnVarNameInTable="columnTelephone1" msprop:Generator_ColumnPropNameInRow="Telephone1" msprop:Generator_ColumnPropNameInTable="Telephone1Column" msprop:Generator_UserColumnName="Telephone1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fax" msprop:Generator_ColumnVarNameInTable="columnFax" msprop:Generator_ColumnPropNameInRow="Fax" msprop:Generator_ColumnPropNameInTable="FaxColumn" msprop:Generator_UserColumnName="Fax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telephone2" msprop:Generator_ColumnVarNameInTable="columnTelephone2" msprop:Generator_ColumnPropNameInRow="Telephone2" msprop:Generator_ColumnPropNameInTable="Telephone2Column" msprop:Generator_UserColumnName="Telephone2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JobTitle" msprop:Generator_ColumnVarNameInTable="columnJobTitle" msprop:Generator_ColumnPropNameInRow="JobTitle" msprop:Generator_ColumnPropNameInTable="JobTitleColumn" msprop:Generator_UserColumnName="JobTitle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="New_MarketSegment" msprop:Generator_ColumnVarNameInTable="columnNew_MarketSegment" msprop:Generator_ColumnPropNameInRow="New_MarketSegment" msprop:Generator_ColumnPropNameInTable="New_MarketSegmentColumn" msprop:Generator_UserColumnName="New_MarketSegment" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:ax_crmContactsap" />
+      <xs:field xpath="mstns:CntctCode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

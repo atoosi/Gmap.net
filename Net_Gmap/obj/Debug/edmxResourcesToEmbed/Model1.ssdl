@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qcrm_MSCRMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="qcrm_MSCRMModelStoreContainer">
+    <EntitySet Name="new_sapsyncqueueExtensionBase" EntityType="qcrm_MSCRMModel.Store.new_sapsyncqueueExtensionBase" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="new_sapsyncqueueExtensionBase">
+    <Key>
+      <PropertyRef Name="new_sapsyncqueueId" />
+    </Key>
+    <Property Name="new_sapsyncqueueId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="new_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="new_entityid" Type="nvarchar" MaxLength="100" />
+    <Property Name="new_keyinfor" Type="nvarchar" MaxLength="100" />
+    <Property Name="new_contact" Type="uniqueidentifier" />
+    <Property Name="new_Result" Type="nvarchar" MaxLength="200" />
+    <Property Name="new_Operation" Type="nvarchar" MaxLength="100" />
+    <Property Name="new_address" Type="nvarchar" MaxLength="100" />
+    <Property Name="new_Account" Type="uniqueidentifier" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="qcrm_MSCRMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="qcrm_MSCRMModelStoreContainer">
+          <EntitySet Name="new_sapsyncqueueExtensionBase" EntityType="qcrm_MSCRMModel.Store.new_sapsyncqueueExtensionBase" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="new_sapsyncqueueExtensionBase">
+          <Key>
+            <PropertyRef Name="new_sapsyncqueueId" />
+          </Key>
+          <Property Name="new_sapsyncqueueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="new_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="new_entityid" Type="nvarchar" MaxLength="100" />
+          <Property Name="new_keyinfor" Type="nvarchar" MaxLength="100" />
+          <Property Name="new_contact" Type="uniqueidentifier" />
+          <Property Name="new_Result" Type="nvarchar" MaxLength="200" />
+          <Property Name="new_Operation" Type="nvarchar" MaxLength="100" />
+          <Property Name="new_address" Type="nvarchar" MaxLength="100" />
+          <Property Name="new_Account" Type="uniqueidentifier" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="qcrm_MSCRMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="qcrm_MSCRMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="new_sapsyncqueueExtensionBase" EntityType="qcrm_MSCRMModel.new_sapsyncqueueExtensionBase" />
+        </EntityContainer>
+        <EntityType Name="new_sapsyncqueueExtensionBase">
+          <Key>
+            <PropertyRef Name="new_sapsyncqueueId" />
+          </Key>
+          <Property Name="new_sapsyncqueueId" Type="Guid" Nullable="false" />
+          <Property Name="new_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="new_entityid" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="new_keyinfor" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="new_contact" Type="Guid" />
+          <Property Name="new_Result" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="new_Operation" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Type="String" Name="new_address" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="new_Account" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="qcrm_MSCRMModelStoreContainer" CdmEntityContainer="qcrm_MSCRMEntities">
+          <EntitySetMapping Name="new_sapsyncqueueExtensionBase"><EntityTypeMapping TypeName="qcrm_MSCRMModel.new_sapsyncqueueExtensionBase"><MappingFragment StoreEntitySet="new_sapsyncqueueExtensionBase">
+            <ScalarProperty Name="new_Account" ColumnName="new_Account" />
+                <ScalarProperty Name="new_address" ColumnName="new_address" />
+                <ScalarProperty Name="new_sapsyncqueueId" ColumnName="new_sapsyncqueueId" />
+            <ScalarProperty Name="new_name" ColumnName="new_name" />
+            <ScalarProperty Name="new_entityid" ColumnName="new_entityid" />
+            <ScalarProperty Name="new_keyinfor" ColumnName="new_keyinfor" />
+            <ScalarProperty Name="new_contact" ColumnName="new_contact" />
+            <ScalarProperty Name="new_Result" ColumnName="new_Result" />
+            <ScalarProperty Name="new_Operation" ColumnName="new_Operation" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="qcrm_MSCRMModel.new_sapsyncqueueExtensionBase" Width="3.25" PointX="0.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

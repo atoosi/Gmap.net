@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qcrm_MSCRMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="qcrm_MSCRMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="new_sapsyncqueueExtensionBase" EntityType="qcrm_MSCRMModel.new_sapsyncqueueExtensionBase" />
+  </EntityContainer>
+  <EntityType Name="new_sapsyncqueueExtensionBase">
+    <Key>
+      <PropertyRef Name="new_sapsyncqueueId" />
+    </Key>
+    <Property Name="new_sapsyncqueueId" Type="Guid" Nullable="false" />
+    <Property Name="new_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="new_entityid" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="new_keyinfor" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="new_contact" Type="Guid" />
+    <Property Name="new_Result" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="new_Operation" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="new_address" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="new_Account" />
+  </EntityType>
+</Schema>

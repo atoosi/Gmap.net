@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="qcrm_MSCRMModelStoreContainer" CdmEntityContainer="qcrm_MSCRMEntities">
+    <EntitySetMapping Name="new_sapsyncqueueExtensionBase">
+      <EntityTypeMapping TypeName="qcrm_MSCRMModel.new_sapsyncqueueExtensionBase">
+        <MappingFragment StoreEntitySet="new_sapsyncqueueExtensionBase">
+          <ScalarProperty Name="new_Account" ColumnName="new_Account" />
+          <ScalarProperty Name="new_address" ColumnName="new_address" />
+          <ScalarProperty Name="new_sapsyncqueueId" ColumnName="new_sapsyncqueueId" />
+          <ScalarProperty Name="new_name" ColumnName="new_name" />
+          <ScalarProperty Name="new_entityid" ColumnName="new_entityid" />
+          <ScalarProperty Name="new_keyinfor" ColumnName="new_keyinfor" />
+          <ScalarProperty Name="new_contact" ColumnName="new_contact" />
+          <ScalarProperty Name="new_Result" ColumnName="new_Result" />
+          <ScalarProperty Name="new_Operation" ColumnName="new_Operation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
